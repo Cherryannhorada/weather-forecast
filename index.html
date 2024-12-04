@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Weather Forecast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: orange;
+            color: yellow;
+            
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: yelllow;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #4caf50;
+            color:red
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .forecast-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .forecast-item {
+            background-color:pink;
+            border: 1px solid #bbdefb;
+            border-radius: 8px;
+            text-align: center;ū            padding: 15px;
+            transition: transform 0.3s ease;
+            
+        }
+
+        .forecast-item:hover {
+            transform: scale(1.05);
+            background-color: violet 
+            color: violet;
+        }
+
+        .forecast-item h2 {
+            font-size: 20px;
+            color: violet;
+            margin-bottom: 10px;
+        }
+
+        .forecast-item p {
+            font-size:16px;
+            color:red;
+        }
+
+        .footer {
+            background-color:blue;
+            color:blue;
+            text-align: center;
+            color:white;
+            padding: 10px;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weekly Weather Forecast</h1>
+        </div>
+        <div class="forecast-grid">
+            <div class="forecast-item">
+                <h2>Monday</h2>
+                <p>Sunny, 25°C</p>
+            </div>
+            <div class="forecast-item">
+                <h2>Tuesday</h2>
+                <p>Cloudy, 22°C</p>
+            </div>
+            <div class="forecast-item">
+                <h2>Wednesday</h2>
+                <p>Rainy, 20°C</p>
+            </div>
+            <div class="forecast-item">
+                <h2>Thursday</h2>
+                <p>Sunny, 27°C</p>
+            </div>
+            <div class="forecast-item">
+                <h2>Friday</h2>
+                <p>Partly Cloudy, 23°C</p>
+            </div>
+            <div class="forecast-item">
+                <h2>Saturday</h2>
+                <p>Stormy, 18°C</p>
+            </div>
+            <div class="forecast-item">
+                <h2>Sunday</h2>
+                <p>Sunny, 24°C</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© CHERRY ANN HORADA</p>
+        </div>
+    </div>
+</body>
+</html>
